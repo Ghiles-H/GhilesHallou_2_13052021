@@ -1,0 +1,82 @@
+
+
+/*Header*/
+#logo{
+    border: 1px solid;
+    width: ;
+    height: auto;
+}
+
+.list-sidenav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.list-sidenav li{
+    display: inline;
+    border: solid 1px;
+}
+
+
+
+/*Section*/
+    /*Populaire*/
+    #populaire{
+        border: solid 1px;
+        height: 580px;
+    }
+    .pop_card{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .pop{
+        border: solid 1px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 10px;
+        height: 145px;
+        margin: 15px;
+    }
+    .pop_img{
+        width: 37%;
+        margin: 5px;
+        border-radius: 10px 0px 0px 10px;
+    }
+    .pop_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    .pop_info h2{
+        font-size: 20px;
+        margin-bottom: -5px;
+    }
+    .pop_info p{
+        font-size: 15px;
+
+    }
+        
+
+        /*Morning_sun*/
+        
+        
+
+        /*Heart_water*/
+        
+
+        /*Bleu_white*/
+        
+    /*Hebergement*/
+
+    /*Activités*/
+
+
+/*Footer*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
