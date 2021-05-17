@@ -1,3 +1,12 @@
+body{
+    /*Variables color*/
+    --first-color:#F2F2F2;      /*Gris*/
+    --second-color:#0065FC;     /*Bleu F*/
+    --second-color-alt:#DEEBFF; /*Bleu C*/
+    /*-------------------*/
+    margin: 0px; 
+    background-color: white;     
+}
 
 
 /*Header*/
@@ -20,10 +29,23 @@
 
 
 /*Section*/
+.plein{
+    color: var(--second-color);
+}
+.vide{
+    color: var(--second-color-alt);
+}
     /*Populaire*/
+    #populaire h1{
+        margin-bottom: 5px;
+        padding-left: 10px;
+        
+    }
     #populaire{
-        border: solid 1px;
-        height: 580px;
+        border: none 1px;
+        height: 600px;
+        background-color: var(--first-color);
+        
     }
     .pop_card{
         display: flex;
@@ -37,6 +59,7 @@
         border-radius: 10px;
         height: 145px;
         margin: 15px;
+        background-color: white;
     }
     .pop_img{
         width: 37%;
@@ -79,4 +102,8 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-color: var(--first-color);
+}
+footer div{
+    padding-left: 10px;
 }
