@@ -15,20 +15,107 @@ body{
 
 
 /*Header*/
+.menu_fixe{
+    
+    background-color: white;
+    width: 100%;
+}
+.fst_line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 #logo{
-    border: 1px solid;
+    border: 1px none;
     width: 25%;
     height: auto;
+    padding-left: 10px;
+}
+#sign_in{
+    border: 1px black none;
+    padding-top: 20px;
+    height: 40px;
+    width: 35%;
+    text-align: center;
+    color: var(--second-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+#sign_in:hover{
+    border-bottom: var(--second-color) 2.5px solid;
+    margin-bottom: -2.5px;
 }
 
 .list-sidenav {
+    position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: start;
+    padding-inline-start: 00px;
+    
 }
 .list-sidenav li{
     display: inline;
-    border: solid 1px;
+    border: none 1px;
+}
+#heberg_list, #act_list{
+    width: 50%;
+    text-align: center;
+    border: none 1px;
+    height: 35px;
+    padding-top: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#heberg_list:hover, #act_list:hover{
+    border-bottom: var(--second-color) 2.5px solid;
+    color: var(--second-color);
+    margin-bottom: -2.5px;
+}
+
+.search{
+    display: flex;
+    border: 1px none;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+#btn_search{
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+    height: 56px;
+    
+    vertical-align: bottom;
+    border: none;
+}
+
+#btn_map{
+   
+    background-image: url(/Documents/images/Icon/map-marker-alt-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35%;
+    height: 56px;
+    background-color: #F2F2F2;
+    border: none;
+    width: 40px;
+    border-radius: 10px 0px 0px 10px;
+
+    
+}
+
+
+
+ 
+#champ_search{
+    height: 50px;
+    width: 150px;
+    margin-left: -5px;
+    margin-right: -5px;
+    font-weight: bold;
+    font-size: 17px;
 }
 
 
@@ -44,8 +131,8 @@ body{
     font-weight: bold;
 }
 #populaire h1, #hebergement h1, #activites h1, #more_link{
-    margin-bottom: 5px;
-    padding-left: 10px;
+    margin-bottom: 10px;
+    padding-left: 25px;
     
 }
     /*Populaire*/
@@ -54,6 +141,7 @@ body{
         border: none 1px;
         height: 600px;
         background-color: var(--first-color);
+        padding-top: 1px;
         
     }
     .pop_card{
@@ -62,7 +150,7 @@ body{
         
     }
     .pop{
-        border: solid 1px;
+        border: none 1px;
         display: flex;
         flex-direction: row;
         border-radius: 10px;
@@ -93,6 +181,9 @@ body{
         color: black;
         text-decoration: none;
     } 
+    .pop_link:hover > .pop{
+        border: 1px solid;
+    }
 
         /*Morning_sun*/
         
@@ -147,7 +238,7 @@ body{
     }
     /*Activités*/
     .act{
-        border: 1px solid;
+        border: 1px none;
         border-radius: 10px;
         width: 90%;
         height: 200px;
@@ -168,6 +259,9 @@ body{
         color: black;
         text-decoration: none;
     }
+    .act_link:hover > .act{
+        border: 1px solid black;
+    }
 
 /*Footer*/
 
@@ -187,6 +281,6 @@ footer div a {
     
 }
 
-footer div a:hover{
+footer div a:hover, #more_link:hover{
     text-decoration: underline;
 }

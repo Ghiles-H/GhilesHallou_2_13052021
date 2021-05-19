@@ -9,24 +9,25 @@
     </head>
     <body>
         <header>
-            
-            <img src="Documents/images/logo/reservia.svg" alt="logo" id="logo"/>
-            <a href="#" id="sign_in" >S'inscrire</a>
-            <nav>
-                <ul class="list-sidenav">
-                   <li id="heberg_list"><a href="#hebergement" >Hébergements</a></li>
-                   <li id="act_list"><a href="#activites" >Activités</a></li>
-               </ul>
-           </nav>
-           
-           <div id="search">
-
-            <form name="rechercher" method="get" action="/s/" >
-                <input type="button" id="btn_map" value="-" >
-                <input type="text" id="champ_search" autocomplete="off" size="40">
-                <input type="submit" id="btn_search" value="Rechercher" >
-            </form>
-        </div><!--#search-->
+            <div class="menu_fixe">
+                 <div class="fst_line">
+                     <img src="Documents/images/logo/reservia.svg" alt="logo" id="logo"/>
+                     <a href="#" id="sign_in" >S'inscrire</a>
+                 </div>
+                 <nav>
+                     <ul class="list-sidenav">
+                         <a href="#hebergement" id="heberg_list"><li >Hébergements</li></a>
+                         <a href="#activites" id="act_list"><li >Activités</li></a>
+                    </ul>
+                </nav>
+           </div>
+            <div id="search">
+                <form name="rechercher" method="get" action="/s/" >
+                    <input type="button" id="btn_map" value="-" >
+                    <input type="text" id="champ_search" autocomplete="off" size="40" placeholder="Marseille, France">
+                    <input type="submit" id="btn_search" value="Rechercher" >
+                </form>
+            </div><!--#search-->
 
         
         </header>
