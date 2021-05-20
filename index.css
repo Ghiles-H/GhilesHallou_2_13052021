@@ -16,7 +16,6 @@ body{
 
 /*Header*/
 .menu_fixe{
-    
     background-color: white;
     width: 100%;
 }
@@ -47,7 +46,6 @@ body{
 }
 
 .list-sidenav {
-    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -73,12 +71,18 @@ body{
     color: var(--second-color);
     margin-bottom: -2.5px;
 }
+.cc, .title_filtre{
+    margin-bottom: 10px;
+    padding-left: 25px;
+    
+}
 
-.search{
+#search{
     display: flex;
     border: 1px none;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 10%;
     
 }
 #btn_search{
@@ -100,15 +104,12 @@ body{
     height: 56px;
     background-color: #F2F2F2;
     border: none;
-    width: 40px;
+    width: 60px;
     border-radius: 10px 0px 0px 10px;
 
     
 }
 
-
-
- 
 #champ_search{
     height: 50px;
     width: 150px;
@@ -116,6 +117,45 @@ body{
     margin-right: -5px;
     font-weight: bold;
     font-size: 17px;
+}
+.filtre .fas{
+    color: var(--second-color);
+    border: 1px none;
+    padding: 20px;
+    border-radius: 200px;
+    background-color: var(--second-color-alt);
+    
+}
+.filtre_btn{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.btn-eco, .btn-fam, .btn-love, .btn-pets{
+    margin: 5px;
+    border-radius: 200px;
+    font-weight: bold;
+}
+.btn-eco, .btn-love{
+    width: 175px;
+    
+}
+.btn-fam{
+    width: 135px;
+}
+.btn-pets{
+    width: 225px;
+}
+.btn-eco:hover, .btn-fam:hover, .btn-love:hover, .btn-pets:hover{
+    border: 2px solid var(--second-color);
+    margin: 3px;
+}
+input[type=checkbox]{
+    display: none;
+}
+#eco:checked ~ .btn-eco, #fam:checked ~ .btn-fam, #love:checked ~ .btn-love, #pets:checked ~ .btn-pets{
+    background-color: var(--second-color);
+    color: var(--second-color-alt);
 }
 
 
@@ -170,7 +210,7 @@ body{
         
     }
     .pop_info h2{
-        font-size: 19px;
+        font-size: 20px;
         margin-bottom: -5px;
     }
     .pop_info p{
@@ -284,3 +324,51 @@ footer div a {
 footer div a:hover, #more_link:hover{
     text-decoration: underline;
 }
+
+@media screen and (max-width: 767px){           /*Mobile*/
+
+}
+
+/*      /*Tablette*'/
+@media screen and (min-width: 768px && max-width: 1023px){           
+    
+}
+*/
+
+
+@media screen and (min-width: 1024px){           /*Desktop*/
+    
+    .heberg_pop{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    #hebergement{
+        width: 70%;
+        border: 1px solid;
+    }
+    .heberg_card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .heberg_card a{
+        width: 33%;
+    }
+    .heberg_info h2 {
+        font-size: 16px;
+        margin: 10px 0px 5px 0px;
+    }
+    #populaire{
+        width: 30%;
+    }
+
+    @media screen and (max-width: 1439px){           /*Laptop*/
+
+    }
+    @media screen and (min-width: 2560px){           /*Desktop 4K*/
+
+    }
+}
+
+
