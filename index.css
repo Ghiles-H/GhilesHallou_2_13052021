@@ -19,6 +19,7 @@ body{
     background-color: white;
     width: 100%;
 }
+
 .fst_line{
     display: flex;
     flex-direction: row;
@@ -71,6 +72,7 @@ body{
     color: var(--second-color);
     margin-bottom: -2.5px;
 }
+
 .cc, .title_filtre{
     margin-bottom: 10px;
     padding-left: 25px;
@@ -89,8 +91,8 @@ body{
     background-color: #0065FC;
     color: white;
     border-radius: 0px 10px 10px 0px;
-    height: 56px;
-    
+    height: 46px;
+    width: 29%;
     vertical-align: bottom;
     border: none;
 }
@@ -101,17 +103,17 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 35%;
-    height: 56px;
+    height: 46px;
     background-color: #F2F2F2;
     border: none;
-    width: 60px;
+    width: 40px;
     border-radius: 10px 0px 0px 10px;
 
     
 }
 
 #champ_search{
-    height: 50px;
+    height: 39px;
     width: 150px;
     margin-left: -5px;
     margin-right: -5px;
@@ -132,9 +134,10 @@ body{
     flex-wrap: wrap;
 }
 .btn-eco, .btn-fam, .btn-love, .btn-pets{
-    margin: 5px;
+    margin: 3px;
     border-radius: 200px;
     font-weight: bold;
+    border: 2px solid var(--first-color);
 }
 .btn-eco, .btn-love{
     width: 175px;
@@ -325,19 +328,121 @@ footer div a:hover, #more_link:hover{
     text-decoration: underline;
 }
 
-@media screen and (max-width: 767px){           /*Mobile*/
-
+@media screen and (max-width: 325px){           /*Mobile*/
+    #btn_search{
+        width: 28%;
+    }
 }
 
-/*      /*Tablette*'/
-@media screen and (min-width: 768px && max-width: 1023px){           
-    
+/*Tablette*/
+@media screen and (min-width: 768px){           
+    #hebergement{
+        width: 100%;
+        border: 1px none;
+    }
+    .heberg_card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        margin-bottom: 25px;
+        
+    }
+    .heberg_card a{
+        width: 33%;
+        
+    }
+
+    .act_card{
+        display: flex;
+        flex-direction: row;
+    }
+    .act h2{
+        font-size: 18px;
+    }
+
+    #port, #calanques{
+        height: 450px;
+    }
+    #port_img, #calanques_img{
+        height: 390px;
+    }
+
+    #fort{
+        height: 240px;
+    }
+    #fort_img{
+        height: 180px;
+    }
+
+    #iles{
+        height: 170px;
+        margin-top: 38px;
+    }
+    #iles_img{
+        height: 110px;
+    }
+
+    #notre-dame{
+        height: 200px;
+    }
+    #notre-dame_img{
+        height: 140px;
+    }
+    #longchamp{
+        height: 213px;
+        margin-top: 35px;
+    }
+    #longchamp_img{
+        height: 153px;
+    }
+
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
-*/
+
 
 
 @media screen and (min-width: 1024px){           /*Desktop*/
-    
+    /*Header*/
+    #logo{
+        width: 15%;
+    }
+    #sign_in{
+        width: 11.25%;
+    }
+    #heberg_list, #act_list{
+        width: 11.25%;
+        position: absolute;
+        height: 40px;
+    }
+    #heberg_list{
+        top: 0px;
+        padding-top: 22.5px;
+        right: 22.50%;
+    }
+    #act_list{
+        top: 0px;
+        padding-top: 22.5px;
+        right: 11.25%;
+    }
+    #heberg_list:hover, #act_list:hover, #sign_in:hover{
+        border-bottom: var(--second-color) 2.5px none;
+        border-top: var(--second-color) 2.5px solid;
+        color: var(--second-color);
+    }
+    #heberg_list:hover, #act_list:hover{
+        margin-top: 0px;
+        padding-top: 20px;
+    }
+    /*Section*/
+    #activites h1{
+        padding-left: 50px;
+    }
     .heberg_pop{
         display: flex;
         flex-direction: row-reverse;
@@ -420,11 +525,23 @@ footer div a:hover, #more_link:hover{
     #longchamp_img{
         height: 153px;
     }
-    @media screen and (max-width: 1439px){           /*Laptop*/
 
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    @media screen and (max-width: 1439px){           /*Laptop*/
+        .heberg_info h2{
+            font-size: 15px;
+        }
+        .act h2{
+            font-size: 18px;
+        }
     }
     @media screen and (min-width: 2560px){           /*Desktop 4K*/
-
+    
     }
 }
 
