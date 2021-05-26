@@ -1,29 +1,191 @@
+@font-face{
+    font-family: 'Raleway-Regular';
+    src: url(/Documents/Police/Raleway/static/Raleway-Regular.ttf) format("truetype");
+}
+body{
+    /*Variables color*/
+    --first-color:#F2F2F2;      /*Gris*/
+    --second-color:#0065FC;     /*Bleu F*/
+    --second-color-alt:#DEEBFF; /*Bleu C*/
+    /*-------------------*/
+    margin: 0px; 
+    background-color: white;  
+    font-family: 'Raleway-Regular', serif;   
+}
 
 
 /*Header*/
+.menu_fixe{
+    background-color: white;
+    width: 100%;
+}
+
+.fst_line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 #logo{
-    border: 1px solid;
+    border: 1px none;
     width: 25%;
     height: auto;
+    padding-left: 10px;
+}
+#sign_in{
+    border: 1px black none;
+    padding-top: 20px;
+    height: 40px;
+    width: 35%;
+    text-align: center;
+    color: var(--second-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+#sign_in:hover{
+    border-bottom: var(--second-color) 2.5px solid;
+    margin-bottom: -2.5px;
 }
 
 .list-sidenav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: start;
+    padding-inline-start: 00px;
+    
 }
 .list-sidenav li{
     display: inline;
-    border: solid 1px;
+    border: none 1px;
+}
+#heberg_list, #act_list{
+    width: 50%;
+    text-align: center;
+    border: none 1px;
+    height: 35px;
+    padding-top: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#heberg_list:hover, #act_list:hover{
+    border-bottom: var(--second-color) 2.5px solid;
+    color: var(--second-color);
+    margin-bottom: -2.5px;
+}
+
+.cc, .title_filtre{
+    margin-bottom: 10px;
+    padding-left: 25px;
+    
+}
+
+#search{
+    display: flex;
+    border: 1px none;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10%;
+    
+}
+#btn_search{
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+    height: 46px;
+    width: 29%;
+    vertical-align: bottom;
+    border: none;
+}
+
+#btn_map{
+   
+    background-image: url(/Documents/images/Icon/map-marker-alt-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35%;
+    height: 46px;
+    background-color: #F2F2F2;
+    border: none;
+    width: 40px;
+    border-radius: 10px 0px 0px 10px;
+
+    
+}
+
+#champ_search{
+    height: 39px;
+    width: 150px;
+    margin-left: -5px;
+    margin-right: -5px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.filtre .fas{
+    color: var(--second-color);
+    border: 1px none;
+    padding: 20px;
+    border-radius: 200px;
+    background-color: var(--second-color-alt);
+    
+}
+.filtre_btn{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.btn-eco, .btn-fam, .btn-love, .btn-pets{
+    margin: 3px;
+    border-radius: 200px;
+    font-weight: bold;
+    border: 2px solid var(--first-color);
+}
+.btn-eco, .btn-love{
+    width: 175px;
+    
+}
+.btn-fam{
+    width: 135px;
+}
+.btn-pets{
+    width: 225px;
+}
+.btn-eco:hover, .btn-fam:hover, .btn-love:hover, .btn-pets:hover{
+    border: 2px solid var(--second-color);
+    margin: 3px;
+}
+input[type=checkbox]{
+    display: none;
+}
+#eco:checked ~ .btn-eco, #fam:checked ~ .btn-fam, #love:checked ~ .btn-love, #pets:checked ~ .btn-pets{
+    background-color: var(--second-color);
+    color: var(--second-color-alt);
 }
 
 
 
 /*Section*/
+.plein{
+    color: var(--second-color);
+}
+.vide{
+    color: var(--second-color-alt);
+}
+.prix{
+    font-weight: bold;
+}
+#populaire h1, #hebergement h1, #activites h1, #more_link{
+    margin-bottom: 10px;
+    padding-left: 25px;
+    
+}
     /*Populaire*/
+    
     #populaire{
-        border: solid 1px;
-        height: 580px;
+        border: none 1px;
+        height: 600px;
+        background-color: var(--first-color);
+        padding-top: 1px;
+        
     }
     .pop_card{
         display: flex;
@@ -31,12 +193,13 @@
         
     }
     .pop{
-        border: solid 1px;
+        border: none 1px;
         display: flex;
         flex-direction: row;
         border-radius: 10px;
         height: 145px;
         margin: 15px;
+        background-color: white;
     }
     .pop_img{
         width: 37%;
@@ -57,7 +220,13 @@
         font-size: 15px;
 
     }
-        
+    .pop_link{
+        color: black;
+        text-decoration: none;
+    } 
+    .pop_link:hover > .pop{
+        border: 1px solid;
+    }
 
         /*Morning_sun*/
         
@@ -69,9 +238,73 @@
         /*Bleu_white*/
         
     /*Hebergement*/
+    .heberg{
+        border: 1px none;
+        border-radius: 10px;
+        width: 90%;
+        height: 200px;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+    
+    
+    .heberg img{
+        border-radius: 10px 10px 0px 0px;
+        width: 97%;
+        height: 115px;
+        margin: 5px 5px 0px 5px;
+    }
+    .heberg_info{
+        margin: -10px 0px 0px 10px;
+        
+    }
+    .heberg_info h2 {
+        font-size: 19px;
+        margin: 10px 0px 5px 0px;
+    }
+    .heberg_info p{
+        font-size: 16px;
+        margin: 0px 0px 5px 0px;
+    }
 
+    #more_link{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    .heberg_link{
+        color: black;
+        text-decoration: none;
+    }
+    .heberg_link:hover > .heberg{
+        border: 1px solid;
+    }
     /*Activités*/
-
+    .act{
+        border: 1px none;
+        border-radius: 10px;
+        width: 90%;
+        height: 200px;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        
+    }
+    .act img{
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        height: 140px;
+    }
+    .act h2{
+        font-size: 19px;
+        margin-left: 15px;
+    }
+    .act_link{
+        color: black;
+        text-decoration: none;
+    }
+    .act_link:hover > .act{
+        border: 1px solid black;
+    }
 
 /*Footer*/
 
@@ -79,4 +312,237 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-color: var(--first-color);
 }
+footer div{
+    padding-left: 10px;
+}
+
+footer div a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+footer div a:hover, #more_link:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 325px){           /*Mobile*/
+    #btn_search{
+        width: 28%;
+    }
+}
+
+/*Tablette*/
+@media screen and (min-width: 768px){           
+    #hebergement{
+        width: 100%;
+        border: 1px none;
+    }
+    .heberg_card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        margin-bottom: 25px;
+        
+    }
+    .heberg_card a{
+        width: 33%;
+        
+    }
+
+    .act_card{
+        display: flex;
+        flex-direction: row;
+    }
+    .act h2{
+        font-size: 18px;
+    }
+
+    #port, #calanques{
+        height: 450px;
+    }
+    #port_img, #calanques_img{
+        height: 390px;
+    }
+
+    #fort{
+        height: 240px;
+    }
+    #fort_img{
+        height: 180px;
+    }
+
+    #iles{
+        height: 170px;
+        margin-top: 38px;
+    }
+    #iles_img{
+        height: 110px;
+    }
+
+    #notre-dame{
+        height: 200px;
+    }
+    #notre-dame_img{
+        height: 140px;
+    }
+    #longchamp{
+        height: 213px;
+        margin-top: 35px;
+    }
+    #longchamp_img{
+        height: 153px;
+    }
+
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px){           /*Desktop*/
+    /*Header*/
+    #logo{
+        width: 15%;
+    }
+    #sign_in{
+        width: 11.25%;
+    }
+    #heberg_list, #act_list{
+        width: 11.25%;
+        position: absolute;
+        height: 40px;
+    }
+    #heberg_list{
+        top: 0px;
+        padding-top: 22.5px;
+        right: 22.50%;
+    }
+    #act_list{
+        top: 0px;
+        padding-top: 22.5px;
+        right: 11.25%;
+    }
+    #heberg_list:hover, #act_list:hover, #sign_in:hover{
+        border-bottom: var(--second-color) 2.5px none;
+        border-top: var(--second-color) 2.5px solid;
+        color: var(--second-color);
+    }
+    #heberg_list:hover, #act_list:hover{
+        margin-top: 0px;
+        padding-top: 20px;
+    }
+    /*Section*/
+    #activites h1{
+        padding-left: 50px;
+    }
+    .heberg_pop{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    #hebergement{
+        width: 65%;
+        border: 1px none;
+        border-radius: 10px;
+        background-color: var(--first-color);
+    }
+    .heberg_card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        margin-bottom: 25px;
+        
+    }
+    .heberg_card a{
+        width: 33%;
+        
+    }
+    .heberg{
+        background-color: white;
+    }
+    .heberg_info h2 {
+        font-size: 16px;
+        margin: 10px 0px 5px 0px;
+    }
+    #populaire{
+        width: 30%;
+        border-radius: 10px;
+    }
+    .pop_info h2{
+        font-size: 18px;
+        margin-bottom: -5px;
+    }
+
+    .act_card{
+        display: flex;
+        flex-direction: row;
+    }
+    .act_link article{
+        border: 1px none;
+    }
+    #port, #calanques{
+        height: 450px;
+    }
+    #port_img, #calanques_img{
+        height: 390px;
+    }
+
+    #fort{
+        height: 240px;
+    }
+    #fort_img{
+        height: 180px;
+    }
+
+    #iles{
+        height: 170px;
+        margin-top: 38px;
+    }
+    #iles_img{
+        height: 110px;
+    }
+
+    #notre-dame{
+        height: 200px;
+    }
+    #notre-dame_img{
+        height: 140px;
+    }
+    #longchamp{
+        height: 213px;
+        margin-top: 35px;
+    }
+    #longchamp_img{
+        height: 153px;
+    }
+
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    @media screen and (max-width: 1439px){           /*Laptop*/
+        .heberg_info h2{
+            font-size: 15px;
+        }
+        .act h2{
+            font-size: 18px;
+        }
+    }
+    @media screen and (min-width: 2560px){           /*Desktop 4K*/
+    
+    }
+}
+
+
