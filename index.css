@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'Raleway-Regular';
-    src: url(/Documents/Police/Raleway/static/Raleway-Regular.ttf) format("truetype");
+    src: url(Documents/Police/Raleway/static/Raleway-Regular.ttf) format("truetype");
 }
 body{
     /*Variables color*/
