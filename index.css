@@ -63,14 +63,20 @@ body{
     border: none 1px;
     height: 35px;
     padding-top: 15px;
+    
+    font-weight: bold;
+}
+#heberg_list a, #act_list a{
     text-decoration: none;
     color: black;
-    font-weight: bold;
 }
 #heberg_list:hover, #act_list:hover{
     border-bottom: var(--second-color) 2.5px solid;
-    color: var(--second-color);
     margin-bottom: -2.5px;
+    color: var(--second-color);
+}
+#heberg_list a:hover, #act_list a:hover{
+    color: var(--second-color);
 }
 
 .cc, .title_filtre{
