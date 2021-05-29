@@ -384,9 +384,17 @@ footer div a:hover, #more_link:hover{
 
     #port, #calanques{
         height: 450px;
+
     }
-    #port_img, #calanques_img{
+    #port_img{
         height: 390px;
+        object-fit: none;
+        object-position: -125px;
+    }
+    #calanques_img{
+        height: 390px;
+        object-fit: none;
+        object-position: -60px;
     }
 
     #fort{
@@ -394,6 +402,7 @@ footer div a:hover, #more_link:hover{
     }
     #fort_img{
         height: 180px;
+        object-fit: none;
     }
 
     #iles{
@@ -402,6 +411,7 @@ footer div a:hover, #more_link:hover{
     }
     #iles_img{
         height: 110px;
+        object-fit: cover;
     }
 
     #notre-dame{
@@ -409,6 +419,8 @@ footer div a:hover, #more_link:hover{
     }
     #notre-dame_img{
         height: 140px;
+        object-fit: cover;
+        
     }
     #longchamp{
         height: 213px;
@@ -416,6 +428,7 @@ footer div a:hover, #more_link:hover{
     }
     #longchamp_img{
         height: 153px;
+        object-fit: none;
     }
 
 
