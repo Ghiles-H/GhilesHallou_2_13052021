@@ -193,6 +193,16 @@ input[type=checkbox]{
         padding-top: 1px;
         
     }
+    #pop_head{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .fa-chart-line{
+        position: relative;
+        right: 40px;
+        top: 30px;
+    }
     .pop_card{
         display: flex;
         flex-direction: column;
@@ -338,6 +348,11 @@ footer div a:hover, #more_link:hover{
     #btn_search{
         width: 28%;
     }
+    .fa-chart-line{
+        position: relative;
+        right: 30px;
+        top: 30px;
+    }
 }
 
 /*Tablette*/
@@ -448,6 +463,11 @@ footer div a:hover, #more_link:hover{
     /*Section*/
     #activites h1{
         padding-left: 50px;
+    }
+    .fa-chart-line{
+        position: relative;
+        right: 30px;
+        top: 30px;
     }
     .heberg_pop{
         display: flex;
