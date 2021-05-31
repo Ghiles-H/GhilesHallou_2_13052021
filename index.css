@@ -131,7 +131,7 @@ body{
 }
 
 #btn_search_M img {
-    width: 25px;
+    width: 75%;
 }
 #btn_search_D{
     background-color: var(--second-color);
