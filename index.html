@@ -28,10 +28,13 @@
             </p>
         </div>
             <div id="search">
-                <form name="rechercher" method="get"  >
-                    <input type="button" id="btn_map" value="-" >
+                <form name="rechercher" method="get"  action="#">
+                    <input type="button" id="btn_map" value="-" />
                     <input type="text" id="champ_search" autocomplete="off" size="40" placeholder="Marseille, France">
-                    <input type="submit" id="btn_search" value="Rechercher" >
+                    <input type="submit" id="btn_search_D" value="Rechercher" >
+                    <input type="submit" id="btn_search_M" value=" " >
+                    
+
                 </form>
             </div><!--#search-->
             <div class="filtre">
@@ -63,6 +66,12 @@
 
                 </div> <!--.filtre_btn-->
             </div><!--.filtre-->
+            <div id="search_info">
+                <i class="fas fa-info"></i>
+                <p id="search_info_txt">
+                    Plus de 500 logements sont disponibles dans cette ville
+                </p>
+            </div>
         
         </header>
 
@@ -147,9 +156,6 @@
                         <a href="#" class="heberg_link" id="hotel_port_link">
                             <article class="heberg" id="hotel_port">
                                 <img src="Documents/images/hebergements/4_small/hotel_port_s.jpg"
-                                 srcset="Documents/images/hebergements/4_small/hotel_port_s.jpg 486w,
-                                         Documents/images/hebergements/3_medium/hotel_port_m.jpg 972w,
-                                         Documents/images/hebergements/2_large/hotel_port_L.jpg 1919w "
                                  alt="" id="hotel_port_img">
                                 <div class="heberg_info">
                                     <h2>Hôtel du port</h2>

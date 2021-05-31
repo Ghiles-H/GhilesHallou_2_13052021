@@ -1,7 +1,28 @@
 @font-face{
-    font-family: 'Raleway-Regular';
+    font-family: 'Raleway';
     src: url(/Documents/Police/Raleway/static/Raleway-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
+@font-face{
+    font-family: 'Raleway';
+    src: url(/Documents/Police/Raleway/static/Raleway-Italic.ttf) format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face{
+    font-family: 'Raleway';
+    src: url(/Documents/Police/Raleway/static/Raleway-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Raleway';
+    src: url(/Documents/Police/Raleway/static/Raleway-BoldItalic.ttf) format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
 body{
     /*Variables color*/
     --first-color:#F2F2F2;      /*Gris*/
@@ -10,7 +31,7 @@ body{
     /*-------------------*/
     margin: 0px; 
     background-color: white;  
-    font-family: 'Raleway-Regular', serif;   
+    font-family: 'Raleway', serif;   
 }
 
 
@@ -75,7 +96,7 @@ body{
     margin-bottom: -2.5px;
     color: var(--second-color);
 }
-#heberg_list a:hover, #act_list a:hover{
+#heberg_list:hover a, #act_list:hover a{
     color: var(--second-color);
 }
 
@@ -93,8 +114,19 @@ body{
     margin-left: 10%;
     
 }
-#btn_search{
-    background-color: #0065FC;
+#btn_search_M{
+    background-image: url(/Documents/images/Icon/magnifying-glass.svg);
+    background-position: center;
+    background-color: var(--second-color);
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+    height: 46px;
+    width: 45px;
+    border: none;
+    
+}
+#btn_search_D{
+    background-color: var(--second-color);
     color: white;
     border-radius: 0px 10px 10px 0px;
     height: 46px;
@@ -110,7 +142,7 @@ body{
     background-position: center;
     background-size: 35%;
     height: 46px;
-    background-color: #F2F2F2;
+    background-color: var(--first-color);
     border: none;
     width: 40px;
     border-radius: 10px 0px 0px 10px;
@@ -126,6 +158,7 @@ body{
     font-weight: bold;
     font-size: 17px;
 }
+
 .filtre .fas{
     color: var(--second-color);
     border: 1px none;
@@ -167,7 +200,33 @@ input[type=checkbox]{
     color: var(--second-color-alt);
 }
 
-
+#search_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.fa-info{
+    color: var(--second-color);
+    position: relative;
+    left: 2%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--second-color-alt) ;
+    margin-right: -35px;
+    z-index: 5;
+    background-color: white;
+    border: solid 1px;
+    height: 10px;
+    padding-top: 7px ;
+    margin-top: 10px;
+}
+#search_info_txt{
+    position: relative;
+    left: 15%;
+    width: 85%;
+    border: 1px none;
+    overflow: hidden;
+}
 
 /*Section*/
 .plein{
@@ -216,11 +275,14 @@ input[type=checkbox]{
         height: 145px;
         margin: 15px;
         background-color: white;
+        box-shadow: 1px 1px 10px rgb(200, 200, 200);
+        
     }
     .pop_img{
         width: 37%;
         margin: 5px;
         border-radius: 10px 0px 0px 10px;
+        object-fit: cover;
     }
     .pop_info{
         display: flex;
@@ -239,9 +301,10 @@ input[type=checkbox]{
     .pop_link{
         color: black;
         text-decoration: none;
+        
     } 
     .pop_link:hover > .pop{
-        border: 1px solid;
+        box-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
         /*Morning_sun*/
@@ -261,6 +324,7 @@ input[type=checkbox]{
         height: 200px;
         margin-left: 5%;
         margin-bottom: 5%;
+        box-shadow: 1px 1px 10px rgb(200, 200, 200);
     }
     
     
@@ -269,6 +333,7 @@ input[type=checkbox]{
         width: 97%;
         height: 115px;
         margin: 5px 5px 0px 5px;
+        object-fit: cover;
     }
     .heberg_info{
         margin: -10px 0px 0px 10px;
@@ -293,7 +358,7 @@ input[type=checkbox]{
         text-decoration: none;
     }
     .heberg_link:hover > .heberg{
-        border: 1px solid;
+        box-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
     /*Activités*/
     .act{
@@ -303,12 +368,13 @@ input[type=checkbox]{
         height: 200px;
         margin-left: 5%;
         margin-bottom: 5%;
-        
+        box-shadow: 1px 1px 10px rgb(200, 200, 200);
     }
     .act img{
         border-radius: 10px 10px 0px 0px;
         width: 100%;
         height: 140px;
+        object-fit: cover;
     }
     .act h2{
         font-size: 19px;
@@ -319,7 +385,7 @@ input[type=checkbox]{
         text-decoration: none;
     }
     .act_link:hover > .act{
-        border: 1px solid black;
+        box-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
 /*Footer*/
@@ -355,8 +421,23 @@ footer div a:hover, #more_link:hover{
     }
 }
 
+@media screen and (max-width: 767px){
+    #btn_search_D{
+        display: none;
+    }
+}
 /*Tablette*/
 @media screen and (min-width: 768px){           
+    .fa-info{
+        left: 5%;
+    }
+    #search_info_txt{
+        left: 10%;        
+    }
+    #btn_search_M{
+        display: none;
+    }
+    
     #hebergement{
         width: 100%;
         border: 1px none;
@@ -402,7 +483,7 @@ footer div a:hover, #more_link:hover{
     }
     #fort_img{
         height: 180px;
-        object-fit: none;
+        object-fit: cover;
     }
 
     #iles{
@@ -428,7 +509,7 @@ footer div a:hover, #more_link:hover{
     }
     #longchamp_img{
         height: 153px;
-        object-fit: none;
+        object-fit: cover;
     }
 
 
@@ -472,6 +553,22 @@ footer div a:hover, #more_link:hover{
     #heberg_list:hover, #act_list:hover{
         margin-top: 0px;
         padding-top: 20px;
+    }
+    
+    .fa-info{
+        left: 2%;
+    }
+    #search_info_txt{
+        left: 5%;        
+    }
+    .filtre{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    .filtre_btn{
+        margin-right: 40%;
     }
     /*Section*/
     #activites h1{
@@ -577,6 +674,15 @@ footer div a:hover, #more_link:hover{
         }
         .act h2{
             font-size: 18px;
+        }
+        .fa-info{
+            left: 2%;
+        }
+        #search_info_txt{
+            left: 6%;        
+        }
+        .filtre_btn{
+            margin-right: 15%;
         }
     }
     @media screen and (min-width: 2560px){           /*Desktop 4K*/
