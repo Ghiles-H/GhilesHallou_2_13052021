@@ -16,8 +16,8 @@
                  </div>
                  <nav>
                      <ul class="list-sidenav">
-                         <a href="#hebergement" id="heberg_list"><li >Hébergements</li></a>
-                         <a href="#activites" id="act_list"><li >Activités</li></a>
+                        <li id="heberg_list"><a href="#hebergement" >Hébergements</a></li>
+                        <li id="act_list"><a href="#activites" >Activités</a></li>
                     </ul>
                 </nav>
            </div>
@@ -28,10 +28,13 @@
             </p>
         </div>
             <div id="search">
-                <form name="rechercher" method="get" action="/s/" >
-                    <input type="button" id="btn_map" value="-" >
+                <form name="rechercher" method="get"  action="#">
+                    <input type="button" id="btn_map" value="-" />
                     <input type="text" id="champ_search" autocomplete="off" size="40" placeholder="Marseille, France">
-                    <input type="submit" id="btn_search" value="Rechercher" >
+                    <input type="submit" id="btn_search_D" value="Rechercher" >
+                    <input type="submit" id="btn_search_M" value=" " >
+                    
+
                 </form>
             </div><!--#search-->
             <div class="filtre">
@@ -63,13 +66,22 @@
 
                 </div> <!--.filtre_btn-->
             </div><!--.filtre-->
+            <div id="search_info">
+                <i class="fas fa-info"></i>
+                <p id="search_info_txt">
+                    Plus de 500 logements sont disponibles dans cette ville
+                </p>
+            </div>
         
         </header>
 
         <main>
             <div class="heberg_pop">
                 <section id="populaire">
-                    <h1>Les plus populaires</h1>
+                    <div id="pop_head">
+                        <h1>Les plus populaires</h1>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
                     <div class="pop_card">
                         <a href="#" class="pop_link" id="morning_sun_link">
                             <article class="pop" id="morning_sun">
@@ -144,9 +156,6 @@
                         <a href="#" class="heberg_link" id="hotel_port_link">
                             <article class="heberg" id="hotel_port">
                                 <img src="Documents/images/hebergements/4_small/hotel_port_s.jpg"
-                                 srcset="Documents/images/hebergements/4_small/hotel_port_s.jpg 486w,
-                                         Documents/images/hebergements/3_medium/hotel_port_m.jpg 972w,
-                                         Documents/images/hebergements/2_large/hotel_port_L.jpg 1919w "
                                  alt="" id="hotel_port_img">
                                 <div class="heberg_info">
                                     <h2>Hôtel du port</h2>
@@ -297,7 +306,7 @@
             <div class="a_propos">
                 <h3>A propos</h3>
 
-                <p></p><a href="#">Fonctionnement du site</a></p>
+                <p><a href="#">Fonctionnement du site</a></p>
                 <p><a href="#">Conditions générales de vente</a></p>
                 <p><a href="#">Données et confidentialité</a></p>
 
