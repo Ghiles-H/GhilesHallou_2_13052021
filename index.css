@@ -114,9 +114,13 @@ body{
     margin-left: 10%;
     
 }
+#search form {
+    display: flex;
+    flex-direction: row;
+}
 #btn_search_M{
-    background-image: url(/Documents/images/Icon/magnifying-glass.svg);
-    background-position: center;
+    /*background-image: url(/Documents/images/Icon/magnifying-glass.svg);
+    background-position: center;*/
     background-color: var(--second-color);
     color: white;
     border-radius: 0px 10px 10px 0px;
@@ -124,6 +128,10 @@ body{
     width: 45px;
     border: none;
     
+}
+
+#btn_search_M img {
+    width: 40px;
 }
 #btn_search_D{
     background-color: var(--second-color);
@@ -437,6 +445,7 @@ footer div a:hover, #more_link:hover{
     #btn_search_M{
         display: none;
     }
+
     
     #hebergement{
         width: 100%;
