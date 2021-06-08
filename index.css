@@ -461,7 +461,14 @@ footer div a:hover, #more_link:hover{
         width: 33%;
         
     }
-
+    .heberg_info h2 {
+        font-size: 16px;
+        
+    }
+    .heberg_info p{
+        font-size: 14px;
+        
+    }
     .act_card{
         display: flex;
         flex-direction: row;
