@@ -1,24 +1,24 @@
 @font-face{
     font-family: 'Raleway';
-    src: url(/Documents/Police/Raleway/static/Raleway.ttf) format("truetype");
+    src: url(/GhilesHallou_2_13052021/Documents/Police/Raleway/static/Raleway-Regular.ttf) format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 @font-face{
     font-family: 'Raleway';
-    src: url(/Documents/Police/Raleway/static/Raleway-Italic.ttf) format("truetype");
+    src: url(/GhilesHallou_2_13052021/Documents/Police/Raleway/static/Raleway-Italic.ttf) format("truetype");
     font-weight: normal;
     font-style: italic;
 }
 @font-face{
     font-family: 'Raleway';
-    src: url(/Documents/Police/Raleway/static/Raleway-Bold.ttf) format("truetype");
+    src: url(/GhilesHallou_2_13052021/Documents/Police/Raleway/static/Raleway-Bold.ttf) format("truetype");
     font-weight: 700;
     font-style: normal;
 }
 @font-face{
     font-family: 'Raleway';
-    src: url(/Documents/Police/Raleway/static/Raleway-BoldItalic.ttf) format("truetype");
+    src: url(/GhilesHallou_2_13052021/Documents/Police/Raleway/static/Raleway-BoldItalic.ttf) format("truetype");
     font-weight: 700;
     font-style: italic;
 }
@@ -119,8 +119,6 @@ body{
     flex-direction: row;
 }
 #btn_search_M{
-    /*background-image: url(/Documents/images/Icon/magnifying-glass.svg);
-    background-position: center;*/
     background-color: var(--second-color);
     color: white;
     border-radius: 0px 10px 10px 0px;
@@ -131,7 +129,7 @@ body{
 }
 
 #btn_search_M img {
-    width: 25px;
+    width: 75%;
 }
 #btn_search_D{
     background-color: var(--second-color);
@@ -145,7 +143,7 @@ body{
 
 #btn_map{
    
-    background-image: url(/Documents/images/Icon/map-marker-alt-solid.svg);
+    background-image: url(/GhilesHallou_2_13052021/Documents/images/Icon/map-marker-alt-solid.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 35%;
