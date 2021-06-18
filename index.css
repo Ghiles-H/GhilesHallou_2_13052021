@@ -164,6 +164,10 @@ body{
     font-weight: bold;
     font-size: 17px;
 }
+#champ_search::placeholder{
+    color: black;
+    font-family: 'Raleway', serif;
+}
 
 .filtre .fas{
     color: var(--second-color);
@@ -571,6 +575,9 @@ footer div a:hover, #more_link:hover{
     
     .fa-info{
         left: 2%;
+    }
+    #search{
+        margin-left: 2%;
     }
     #search_info_txt{
         left: 5%;        
